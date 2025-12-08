@@ -1,0 +1,22 @@
+TASK_TYPE: inference_dreamvideo_entrance
+use_fp16: True
+guide_scale: 9.0
+chunk_size: 2
+decoder_bs: 2
+max_frames: 32
+scale: 8
+batch_size: 1
+noise_strength: 0.1
+round: 1
+seed: 6847  # Specify a fixed seed during inference. Invalid if use_random_seed is True.
+use_random_seed: True # Set to True to use the random seed for inference
+log_dir: workspace/dreamvideo/infer/subject_custom
+test_list_path: data/custom/infer/task_24.txt  # Path to your test file
+test_data_dir: data/images/custom/task_n  # Directory path to the subject images. Modify it for your subject.
+subject_cfg: configs/dreamvideo/V1_step2.yaml  # Path to your configuration file of subject learning
+base_model: models/model_scope_v1-5_0632000.pth
+identity_adapter_index: 1500  # Use the ID adapter trained for 'identity_adapter_index' steps for inference
+#motion_cfg: configs/dreamvideo/V3_step2.yaml  # Path to your configuration file of motion learning
+#motion_adapter_index: 1500  # Use the motion adapter trained for 'motion_adapter_index' steps for inference
+appearance_guide_strength_cond: 1
+appearance_guide_strength_uncond: 1
