@@ -23,31 +23,30 @@ Official implementation of **[Bring Your Dreams to Life: Continual Text-to-Video
 ### **Abstract**
 Customized text-to-video generation (CTVG) has recently witnessed significant progress in generating tailored videos from user-specific text. However, existing CTVG methods unrealistically assume that personalized concepts remain static and do not expand incrementally over time. Additionally, they struggle with catastrophic forgetting and concept neglect when continuously learning new concepts, including subjects and motions. To resolve the above challenges, we develop a novel Continual Customized Video Diffusion (CCVD) model, which can continuously learn new concepts to generate videos across various text-to-video generation tasks by tackling catastrophic forgetting and concept neglect. Specifically, to address catastrophic forgetting, we introduce a concept-specific attribute retention module and a task-aware concept aggregation strategy. They can capture the unique characteristics and identities of old concepts during training, while combining all subject and motion adapters of old concepts based on their relevance during testing. Furthermore, to tackle concept neglect, we develop a controllable conditional synthesis to enhance regional features and align video contexts with user conditions, by incorporating layer-specific region attention-guided noise estimation. Experimental comparisons demonstrate that our CCVD outperforms existing CTVG models.
 
-<div align="center">
-  <video src="video/1_multi_l2dm.mp4" width="70%" poster=""> </video>
-</div>
-
 
 ## **Examples**
 
-## Multi-object Results
 
-|        | Example 1 (Desert)                                    | Example 2 (River)                                     | Example 3 (Street)                                    |
+## Multi-concept Results
+
+|        | Base: The desert with blue sky in the background. Region: V2 cat and V20 dog walking in the desert   | Base: A river with flowers and plants on its banks. Region: V16 duck toy and V10 dog playing on the river.| Base: A street with buildings. Region: V10 dog and V28 bear toy and V2 cat walking in the street. |
 |--------|-------------------------------------------------------|-------------------------------------------------------|-------------------------------------------------------|
-| L2DM   | <video src="video/1_multi_l2dm.mp4"  width="260" controls muted loop></video> | <video src="video/2_multi_l2dm.mp4"  width="260" controls muted loop></video> | <video src="video/3_multi_l2dm.mp4.mp4"  width="260" controls muted loop></video> |
-| CLoRA  | <video src="./1_multi_clora.mp4" width="260" controls muted loop></video> | <video src="./2_multi_clora.mp4" width="260" controls muted loop></video> | <video src="./3_multi_clora.mp4" width="260" controls muted loop></video> |
-| LoRA-M | <video src="./1_multi_lora_m.mp4" width="260" controls muted loop></video> | <video src="./2_multi_lora_m.mp4" width="260" controls muted loop></video> | <video src="./3_multi_lora_m.mp4" width="260" controls muted loop></video> |
-| Ours   | <video src="./1_multi_ours.mp4"  width="260" controls muted loop></video><br><sub>Base: The desert with blue sky in the background. Region: V2 cat \| V20 dog walking in the desert</sub> | <video src="./2_multi_ours.mp4"  width="260" controls muted loop></video><br><sub>Base: A river with flowers and plants on its banks. Region: V16 duck toy and V10 dog playing on the river</sub> | <video src="./3_multi_ours.mp4"  width="260" controls muted loop></video><br><sub>Base: A street with buildings. Region: V10 dog \| V28 bear toy \| V2 cat walking in the street</sub> |
+| Ours   | <video src="https://github.com/user-attachments/assets/70385b77-d51f-4b83-82de-31d4292b6e6a"  width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/fa33c6f0-ece2-4e50-9262-19edba153791"  width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/11351300-c091-4c7c-973e-020b694e629e"  width="30%" controls muted loop></video> |
+| L2DM  | <video src="https://github.com/user-attachments/assets/cddc7f6e-9c18-475d-928b-d676af46b9d7" width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/640ddf08-1b50-4bc3-a13a-521515b811df" width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/b2f73494-9916-4b76-be84-8f39e26c6623" width="30%" controls muted loop></video> |
+| CLoRA | <video src="https://github.com/user-attachments/assets/ae2e8079-b76d-4fa0-9848-6b9c7715c50c" width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/373b3159-0141-4ce6-8a92-dc4da97344e2" width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/7911f2ae-2e0d-49a6-a846-bb94ce24242b" width="30%" controls muted loop></video> |
+| LoRA-M   | <video src="https://github.com/user-attachments/assets/d6e639e0-0115-4bbd-b0e5-3329d6813243"  width="260" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/81dd40eb-e8f8-468f-8692-2958de719efe"  width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/cffe7f5e-8a12-4032-ac04-e58c7d2f936d"  width="260" controls muted loop></video>|
 
 
-## Single-object Results
+## Single-concept Results
 
-|        | Example 1 | Example 2 | Example 3 |
+|        |V30 man wearing a chef's hat, cutting vegetables in the kitchen. | V1 dog running on the park lawn. | V2 cat wearing sunglasses lying on a beach chair on a sunset beach. |
 |--------|-----------|-----------|-----------|
-| L2DM   | <video src="./1_single_l2dm.mp4"  width="260" controls muted loop></video> | <video src="./2_single_l2dm.mp4"  width="260" controls muted loop></video> | <video src="./3_single_l2dm.mp4"  width="260" controls muted loop></video> |
-| CLoRA  | <video src="./1_single_clora.mp4" width="260" controls muted loop></video> | <video src="./2_single_clora.mp4" width="260" controls muted loop></video> | <video src="./3_single_clora.mp4" width="260" controls muted loop></video> |
-| LoRA-M | <video src="./1_single_lora_m.mp4" width="260" controls muted loop></video> | <video src="./2_single_lora_m.mp4" width="260" controls muted loop></video> | <video src="./3_single_lora_m.mp4" width="260" controls muted loop></video> |
-| Ours   | <video src="./1_single_ours.mp4"  width="260" controls muted loop></video> | <video src="./2_single_ours.mp4"  width="260" controls muted loop></video> | <video src="./3_single_ours.mp4"  width="260" controls muted loop></video> |
+| Ours   | <video src="https://github.com/user-attachments/assets/d25bc75f-8f40-4f5a-a8f7-83db3f522b78"  width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/73793b7a-ea5d-4b53-86bf-684171d85148"  width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/705ac4bb-7349-475d-956d-344511c61dd5"  width="30%" controls muted loop></video> |
+| L2DM  | <video src="https://github.com/user-attachments/assets/f372207c-15fc-4138-af88-c5ff023e8ba3" width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/032bf640-42fb-4616-b441-868378fa0721" width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/3386e230-1138-42be-b270-1f197a3fa7c5" width="30%" controls muted loop></video> |
+| CLoRA | <video src="https://github.com/user-attachments/assets/c1e2ebbf-9e63-460a-9ca5-f0bd5a02ad9a" width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/03788ef9-8aac-4a09-bd02-71a989277cd7" width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/c0c0b3e9-cfe5-47cd-8392-f4a0c5589aa9" width="30%" controls muted loop></video> |
+| LoRA-M  | <video src="https://github.com/user-attachments/assets/4286f3c4-6136-4da5-a616-2726ac221e7d"  width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/eaa1836b-29d7-429c-9e28-e760a8841faf"  width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/2295aea3-b794-4c95-bed2-b01b837eca3c"  width="30%" controls muted loop></video> |
+
+
 
 
 ## **Dependencies and Installation**
