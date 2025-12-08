@@ -26,9 +26,25 @@ Customized text-to-video generation (CTVG) has recently witnessed significant pr
 
 ## **Examples**
 
-|        | Desert                                               | River                                                | Street                                               |
-|--------|------------------------------------------------------|------------------------------------------------------|------------------------------------------------------|
-| Ours   | <video src="video/1_single_ours.mp4" width="200"></video> | <video src="video/2_single_ours.mp4"  width="260"></video> |  <video src="video/3_single_ours.mp4" width="260"></video> |
+## Multi-object Results
+
+|        | Example 1 (Desert)                                    | Example 2 (River)                                     | Example 3 (Street)                                    |
+|--------|-------------------------------------------------------|-------------------------------------------------------|-------------------------------------------------------|
+| L2DM   | <video src="./1_multi_l2dm.mp4"  width="260" controls muted loop></video> | <video src="./2_multi_l2dm.mp4"  width="260" controls muted loop></video> | <video src="./3_multi_l2dm.mp4"  width="260" controls muted loop></video> |
+| CLoRA  | <video src="./1_multi_clora.mp4" width="260" controls muted loop></video> | <video src="./2_multi_clora.mp4" width="260" controls muted loop></video> | <video src="./3_multi_clora.mp4" width="260" controls muted loop></video> |
+| LoRA-M | <video src="./1_multi_lora_m.mp4" width="260" controls muted loop></video> | <video src="./2_multi_lora_m.mp4" width="260" controls muted loop></video> | <video src="./3_multi_lora_m.mp4" width="260" controls muted loop></video> |
+| Ours   | <video src="./1_multi_ours.mp4"  width="260" controls muted loop></video><br><sub>Base: The desert with blue sky in the background. Region: V2 cat \| V20 dog walking in the desert</sub> | <video src="./2_multi_ours.mp4"  width="260" controls muted loop></video><br><sub>Base: A river with flowers and plants on its banks. Region: V16 duck toy and V10 dog playing on the river</sub> | <video src="./3_multi_ours.mp4"  width="260" controls muted loop></video><br><sub>Base: A street with buildings. Region: V10 dog \| V28 bear toy \| V2 cat walking in the street</sub> |
+
+
+## Single-object Results
+
+|        | Example 1 | Example 2 | Example 3 |
+|--------|-----------|-----------|-----------|
+| L2DM   | <video src="./1_single_l2dm.mp4"  width="260" controls muted loop></video> | <video src="./2_single_l2dm.mp4"  width="260" controls muted loop></video> | <video src="./3_single_l2dm.mp4"  width="260" controls muted loop></video> |
+| CLoRA  | <video src="./1_single_clora.mp4" width="260" controls muted loop></video> | <video src="./2_single_clora.mp4" width="260" controls muted loop></video> | <video src="./3_single_clora.mp4" width="260" controls muted loop></video> |
+| LoRA-M | <video src="./1_single_lora_m.mp4" width="260" controls muted loop></video> | <video src="./2_single_lora_m.mp4" width="260" controls muted loop></video> | <video src="./3_single_lora_m.mp4" width="260" controls muted loop></video> |
+| Ours   | <video src="./1_single_ours.mp4"  width="260" controls muted loop></video> | <video src="./2_single_ours.mp4"  width="260" controls muted loop></video> | <video src="./3_single_ours.mp4"  width="260" controls muted loop></video> |
+
 
 ## **Dependencies and Installation**
 
