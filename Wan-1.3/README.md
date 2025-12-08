@@ -24,7 +24,7 @@ Official implementation of **[Bring Your Dreams to Life: Continual Text-to-Video
 Customized text-to-video generation (CTVG) has recently witnessed significant progress in generating tailored videos from user-specific text. However, existing CTVG methods unrealistically assume that personalized concepts remain static and do not expand incrementally over time. Additionally, they struggle with catastrophic forgetting and concept neglect when continuously learning new concepts, including subjects and motions. To resolve the above challenges, we develop a novel Continual Customized Video Diffusion (CCVD) model, which can continuously learn new concepts to generate videos across various text-to-video generation tasks by tackling catastrophic forgetting and concept neglect. Specifically, to address catastrophic forgetting, we introduce a concept-specific attribute retention module and a task-aware concept aggregation strategy. They can capture the unique characteristics and identities of old concepts during training, while combining all subject and motion adapters of old concepts based on their relevance during testing. Furthermore, to tackle concept neglect, we develop a controllable conditional synthesis to enhance regional features and align video contexts with user conditions, by incorporating layer-specific region attention-guided noise estimation. Experimental comparisons demonstrate that our CCVD outperforms existing CTVG models.
 
 <div align="center">
-  <video src="./video/1_multi_l2dm.mp4" width="70%" poster=""> </video>
+  <video src="video/1_multi_l2dm.mp4" width="70%" poster=""> </video>
 </div>
 
 
