@@ -23,6 +23,10 @@ Official implementation of **[Bring Your Dreams to Life: Continual Text-to-Video
 ### **Abstract**
 Customized text-to-video generation (CTVG) has recently witnessed significant progress in generating tailored videos from user-specific text. However, existing CTVG methods unrealistically assume that personalized concepts remain static and do not expand incrementally over time. Additionally, they struggle with catastrophic forgetting and concept neglect when continuously learning new concepts, including subjects and motions. To resolve the above challenges, we develop a novel Continual Customized Video Diffusion (CCVD) model, which can continuously learn new concepts to generate videos across various text-to-video generation tasks by tackling catastrophic forgetting and concept neglect. Specifically, to address catastrophic forgetting, we introduce a concept-specific attribute retention module and a task-aware concept aggregation strategy. They can capture the unique characteristics and identities of old concepts during training, while combining all subject and motion adapters of old concepts based on their relevance during testing. Furthermore, to tackle concept neglect, we develop a controllable conditional synthesis to enhance regional features and align video contexts with user conditions, by incorporating layer-specific region attention-guided noise estimation. Experimental comparisons demonstrate that our CCVD outperforms existing CTVG models.
 
+<div align="center">
+  <video src="./video/1_multi_l2dm.mp4" width="70%" poster=""> </video>
+</div>
+
 
 ## **Examples**
 
@@ -30,7 +34,7 @@ Customized text-to-video generation (CTVG) has recently witnessed significant pr
 
 |        | Example 1 (Desert)                                    | Example 2 (River)                                     | Example 3 (Street)                                    |
 |--------|-------------------------------------------------------|-------------------------------------------------------|-------------------------------------------------------|
-| L2DM   | <video src="./1_multi_l2dm.mp4"  width="260" controls muted loop></video> | <video src="./2_multi_l2dm.mp4"  width="260" controls muted loop></video> | <video src="./3_multi_l2dm.mp4"  width="260" controls muted loop></video> |
+| L2DM   | <video src="video/1_multi_l2dm.mp4"  width="260" controls muted loop></video> | <video src="video/2_multi_l2dm.mp4"  width="260" controls muted loop></video> | <video src="video/3_multi_l2dm.mp4.mp4"  width="260" controls muted loop></video> |
 | CLoRA  | <video src="./1_multi_clora.mp4" width="260" controls muted loop></video> | <video src="./2_multi_clora.mp4" width="260" controls muted loop></video> | <video src="./3_multi_clora.mp4" width="260" controls muted loop></video> |
 | LoRA-M | <video src="./1_multi_lora_m.mp4" width="260" controls muted loop></video> | <video src="./2_multi_lora_m.mp4" width="260" controls muted loop></video> | <video src="./3_multi_lora_m.mp4" width="260" controls muted loop></video> |
 | Ours   | <video src="./1_multi_ours.mp4"  width="260" controls muted loop></video><br><sub>Base: The desert with blue sky in the background. Region: V2 cat \| V20 dog walking in the desert</sub> | <video src="./2_multi_ours.mp4"  width="260" controls muted loop></video><br><sub>Base: A river with flowers and plants on its banks. Region: V16 duck toy and V10 dog playing on the river</sub> | <video src="./3_multi_ours.mp4"  width="260" controls muted loop></video><br><sub>Base: A street with buildings. Region: V10 dog \| V28 bear toy \| V2 cat walking in the street</sub> |
