@@ -28,7 +28,7 @@ Customized text-to-video generation (CTVG) has recently witnessed significant pr
 
 |        | Desert                                               | River                                                | Street                                               |
 |--------|------------------------------------------------------|------------------------------------------------------|------------------------------------------------------|
-| Ours   | <video src="video/1_single_ours.mp4" width="260"></video> | <video src="video/2_single_ours.mp4"  width="260"></video> |  <video src="video/3_single_ours.mp4" width="260"></video> |
+| Ours   | <video src="video/1_single_ours.mp4" width="200"></video> | <video src="video/2_single_ours.mp4"  width="260"></video> |  <video src="video/3_single_ours.mp4" width="260"></video> |
 
 ## **Dependencies and Installation**
 
