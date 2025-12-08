@@ -28,11 +28,7 @@ Customized text-to-video generation (CTVG) has recently witnessed significant pr
 
 |        | Desert                                               | River                                                | Street                                               |
 |--------|------------------------------------------------------|------------------------------------------------------|------------------------------------------------------|
-| Ours   | <video src="video/1_single_ours.mp4"  width="260" controls muted loop></video> | <video src="video/2_single_ours.mp4"   width="260" controls muted loop></video> |  <video src="video/3_single_ours.mp4"  width="260" controls muted loop></video> |
-| L2DM   | <video src="videos/L2DM_desert.mp4"  width="260" controls muted loop></video> | <video src="videos/L2DM_river.mp4"   width="260" controls muted loop></video> | <video src="videos/L2DM_street.mp4"  width="260" controls muted loop></video> |
-| CLoRA  | <video src="videos/CLoRA_desert.mp4" width="260" controls muted loop></video> | <video src="videos/CLoRA_river.mp4"  width="260" controls muted loop></video> | <video src="videos/CLoRA_street.mp4" width="260" controls muted loop></video> |
-| LoRA-M | <video src="videos/LoRA-M_desert.mp4" width="260" controls muted loop></video> | <video src="videos/LoRA-M_river.mp4"  width="260" controls muted loop></video> | <video src="videos/LoRA-M_street.mp4" width="260" controls muted loop></video> |
-
+| Ours   | <video src="video/1_single_ours.mp4" width="260"></video> | <video src="video/2_single_ours.mp4"  width="260"></video> |  <video src="video/3_single_ours.mp4" width="260"></video> |
 
 ## **Dependencies and Installation**
 
