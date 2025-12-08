@@ -26,30 +26,7 @@ Customized text-to-video generation (CTVG) has recently witnessed significant pr
 
 ## **Examples**
 
-### Concept-incremental learning tasks
-<div align="center">
-<img src="source/F3.png" width=980>
-</div>
 
-### Single-concept customization
-<div align="center">
-<img src="source/F4.png" width=980>
-</div>
-
-### Multi-concept customization
-<div align="center">
-<img src="source/F5.png" width=980>
-</div>
-
-### Custom style transfer
-<div align="center">
-<img src="source/F6.png" width=980>
-</div>
-
-### Custom image editing
-<div align="center">
-<img src="source/F7.png" width=980>
-</div>
 
 ## **Dependencies and Installation**
 
