@@ -53,25 +53,20 @@ Customized text-to-video generation (CTVG) has recently witnessed significant pr
 
 ## **Dependencies and Installation**
 
-- Linux or macOS with Python ≥ 3.8
-- PyTorch ≥ 1.12.0 and [torchvision](https://github.com/pytorch/vision/) that matches the PyTorch installation.
-  Install them together at [pytorch.org](https://pytorch.org) to make sure of this.
-```shell
-conda create -n CCVD python=3.8
-conda activate CCVD
-pip install torch==1.12.0+cu113 torchvision==0.13.0+cu113 torchaudio==0.12.0 --extra-index-url https://download.pytorch.org/whl/cu113
+### Ensure torch >= 2.4.0
 pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
-  ```
 
-## CCVD Training and Testing
+
+## CCVD Wan-1.3 Training and Testing
+
 
 ### Step 1: Pretrained Model and Data Preparation
 
-1.1 The datasets are assumed to exist in a directory specified by the environment variable
-`/data/`.
+### 1.1 Dataset Layout
 
-#### Expected dataset structure for all:
-```
+We assume datasets are mounted under `/data/`:
+
+```bash
 /data/
 +-- custom/
 |   +-- infer
@@ -99,31 +94,56 @@ pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 |   |   +-- V3/01.avi ...
 |   |   +-- V8/01.avi ...
 |   |   ...
+````
+
+
+### 1.2 Download Wan-1.3 Base Model
+
+We use **Wan2.1-T2V-1.3B** as the base checkpoint. 
+
+Create a `models/` directory in your project root:
+
+```bash
+mkdir -p models
 ```
 
-1.2  Download the base models ModelScopeT2V V1.5.
-```shell
-!pip install modelscope
-from modelscope.hub.snapshot_download import snapshot_download
-model_dir = snapshot_download('iic/dreamvideo-t2v', cache_dir='models/')
+#### Download via `huggingface-cli`
+
+```bash
+pip install "huggingface_hub[cli]"
+
+huggingface-cli download Wan-AI/Wan2.1-T2V-1.3B \
+  --local-dir ./models/Wan2.1-T2V-1.3B
 ```
-Then you might need the following command to move the checkpoints to the "models/" directory:
-```shell
-mv ./models/iic/dreamvideo-t2v/* ./models/
-```
+
 
 ### Step 2: Start Training
 
-Please run the following command for training:
-```shell
+Once the dataset and base model are ready and the repo dependencies are installed (e.g. `pip install -r requirements.txt`, `torch>=2.4` ([Hugging Face][1])), start fine-tuning:
+
+```bash
 bash train.sh
 ```
+
+Typical behavior of `train.sh` (you can adapt to your project):
+
+* Reads a config file (e.g. `configs/wan_1_3.yaml`) that specifies:
+
+  * Path to base model (e.g. `./models/Wan2.1-T2V-1.3B`)
+  * Dataset root (e.g. `/data/custom/Train`)
+  * Training hyperparameters (lr, batch size, max steps, etc.)
+* Saves fine-tuned checkpoints under something like:
+
+  * `./outputs/wan_1_3/checkpoints/`
+
+Please modify `train.sh` and the config file paths to match your own environment and naming.
 
 
 ### Step 3: Inference and Evaluation
 
-Please run the following command for inference:
-```shell
+After training completes, run inference with:
+
+```bash
 bash inference.sh
 ```
 The inference results can be found in the `/workspace` directory.
