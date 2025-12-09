@@ -33,7 +33,7 @@ Customized text-to-video generation (CTVG) has recently witnessed significant pr
 
 ## Multi-concept Results
 
-### DreamVideo Baseline
+### · DreamVideo Baseline
 
 <video src="https://github.com/user-attachments/assets/dc00b864-4b41-4f12-8a70-4422fa207952"  width="30%" controls muted loop></video> 
 <video src="https://github.com/user-attachments/assets/bc10b5ab-6809-48bd-a810-4afa34ca1c94"  width="30%" controls muted loop></video> 
@@ -41,7 +41,7 @@ Customized text-to-video generation (CTVG) has recently witnessed significant pr
 <video src="https://github.com/user-attachments/assets/055ed5d3-bb4f-4d00-8cc1-acb32ffef15a"  width="30%" controls muted loop></video> 
 <video src="https://github.com/user-attachments/assets/3c557440-690d-4904-811f-3086bcf02f4a"  width="30%" controls muted loop></video> 
 
-### Wan Baseline
+### · Wan Baseline
 
 |        | Base: The desert with blue sky in the background. Region: V2 cat and V20 dog walking in the desert   | Base: A river with flowers and plants on its banks. Region: V16 duck toy and V10 dog playing on the river.| Base: A street with buildings. Region: V10 dog and V28 bear toy and V2 cat walking in the street. |
 |--------|-------------------------------------------------------|-------------------------------------------------------|-------------------------------------------------------|
@@ -53,13 +53,13 @@ Customized text-to-video generation (CTVG) has recently witnessed significant pr
 
 ## Single-concept Results
 
-### DreamVideo Baseline
+### · DreamVideo Baseline
 
 <video src="https://github.com/user-attachments/assets/5e22f6a2-d4b7-4ba7-a74c-472ef76bc58f"  width="30%" controls muted loop></video> 
-<video src="https://github.com/user-attachments/assets/0bf65060-7450-4d07-a054-333cfa9339c6"  width="30%" controls muted loop></video> 
+<video src="https://github.com/user-attachments/assets/fadb9c6c-f156-4ddb-814b-d1a0c23838f3"  width="30%" controls muted loop></video> 
 <video src="https://github.com/user-attachments/assets/c613b0be-4e4b-41e5-8f4c-646a0e1e5a24"  width="30%" controls muted loop></video> 
 
-### Wan Baseline
+### · Wan Baseline
 
 |        |V30 man wearing a chef's hat, cutting vegetables in the kitchen. | V1 dog running on the park lawn. | V2 cat wearing sunglasses lying on a beach chair on a sunset beach. |
 |--------|-----------|-----------|-----------|
@@ -77,6 +77,12 @@ Customized text-to-video generation (CTVG) has recently witnessed significant pr
 ## Video Editing
 
 <video src="https://github.com/user-attachments/assets/eff75b43-1a47-4a1e-bc83-c991e7e844bf"  width="30%" controls muted loop></video> 
+
+## Implementation
+
+· If you wish to build upon the DreamVideo baseline model, please refer to **[DreamVideo](https://github.com/JiahuaDong/CCVD/tree/main/DreamVideo)**
+
+· If you wish to build upon the Wan baseline model, please refer to **[Wan](https://github.com/JiahuaDong/CCVD/tree/main/Wan-1.3)**
 
 ## Acknowledgement
 
