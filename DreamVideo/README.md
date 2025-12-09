@@ -1,3 +1,13 @@
+<div align="center">
+  
+## Bring Your Dreams to Life: Continual Text-to-Video Customization (DreamVideo)
+---
+
+Official implementation of **[Bring Your Dreams to Life: Continual Text-to-Video Customization](https://arxiv.org/abs/2512.05802)**.
+
+</div>
+
+
 ## **Performance**
 
 ### Concept-incremental learning tasks
