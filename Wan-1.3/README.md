@@ -104,28 +104,14 @@ bash inference.sh
 ```
 The inference results can be found in the `/workspace` directory.
 
-## Acknowledgement
-
-This project is mainly based on DreamVideo and Wan. In our experiments, we use the following projects:
-
-[1] **[DreamVideo: Composing Your Dream Videos with Customized Subject and Motion.](https://github.com/ali-vilab/VGen)**
-
-[2] **[Wan: Open and Advanced Large-Scale Video Generative Models.](https://github.com/Wan-Video/Wan2.1)**
-
-[3] **[How to Continually Adapt Text-to-Image Diffusion Models for Flexible Customization?](https://github.com/JiahuaDong/CIFC)**
-
-
-## Contact
-If you have any questions, you are very welcome to email dongjiahua1995@gmail.com.
-
 
 ## BibTeX
 If you find CIDM useful for your research and applications, please cite using this BibTeX:
 
 ```BibTeX
-@ARTICLE{AAAI2026_CCVDbring,
-      title={Bring Your Dreams to Life: Continual Text-to-Video Customization}, 
-      author={Jiahua Dong and Xudong Wang and Wenqi Liang and Zongyan Han and Meng Cao and Duzhen Zhang and Hanbin Zhao and Zhi Han and Salman Khan and Fahad Shahbaz Khan},
-      year={2025},
-      journal={arXiv preprint arXiv:2512.05802}
+@inproceedings{AAAI2026_CCVD_Bring, 
+title={Bring Your Dreams to Life: Continual Text-to-Video Customization}, 
+author={Jiahua Dong and Xudong Wang and Wenqi Liang and Zongyan Han and Meng Cao and Duzhen Zhang and Hanbin Zhao and Zhi Han and Salman Khan and Fahad Shahbaz Khan},
+booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+year={2025}
 }
