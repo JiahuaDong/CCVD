@@ -1,6 +1,6 @@
 # [AAAI'26] Bring Your Dreams to Life: Continual Text-to-Video Customization
 
-Jiahua Dong, Xudong Wang, Wenqi Liang, Zongyan Han, Meng Cao, Duzhen Zhang, Hanbin Zhao, Zhi Han, Salman Khan, and Fahad Shahbaz Khan, "Bring Your Dreams to Life: Continual Text-to-Video Customization", ICLR, 2025
+Jiahua Dong, Xudong Wang, Wenqi Liang, Zongyan Han, Meng Cao, Duzhen Zhang, Hanbin Zhao, Zhi Han, Salman Khan, and Fahad Shahbaz Khan, "Bring Your Dreams to Life: Continual Text-to-Video Customization", AAAI, 2026
 
 [[arXiv](https://arxiv.org/abs/2512.05802
 )]
