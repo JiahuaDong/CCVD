@@ -80,9 +80,9 @@ Customized text-to-video generation (CTVG) has recently witnessed significant pr
 
 ## Implementation
 
-· If you wish to build upon the DreamVideo baseline model, please refer to **[DreamVideo](https://github.com/JiahuaDong/CCVD/tree/main/DreamVideo)**
+· If you wish to build upon the DreamVideo baseline model, please refer to **[DreamVideo](https://github.com/JiahuaDong/CCVD/tree/main/DreamVideo)**.
 
-· If you wish to build upon the Wan baseline model, please refer to **[Wan](https://github.com/JiahuaDong/CCVD/tree/main/Wan-1.3)**
+· If you wish to build upon the Wan baseline model, please refer to **[Wan](https://github.com/JiahuaDong/CCVD/tree/main/Wan-1.3)**.
 
 ## Acknowledgement
 
