@@ -7,7 +7,7 @@ Jiahua Dong, Xudong Wang, Wenqi Liang, Zongyan Han, Meng Cao, Duzhen Zhang, Hanb
 
 #### 🔥🔥🔥 News
 
-- **2025-12-09:** Codes on both <span style="color:red; font-weight:bold">**DreamVideo**</span> and <span style="color:red; font-weight:bold">**Wan 2.3**</span> are released. ⭐️⭐️⭐️
+- **2025-12-09:** Codes on both <span style="color:red; font-weight:bold">**DreamVideo**</span> and <span style="color:red; font-weight:bold">**Wan 2.1**</span> are released. ⭐️⭐️⭐️
 - **2025-12-01:** This repo is released.
 - **2025-11-08:** CCVD is accepted at AAAI 2026. 🎉🎉🎉
 
@@ -108,9 +108,9 @@ If you have any questions, you are very welcome to email dongjiahua1995@gmail.co
 If you find CIDM useful for your research and applications, please cite using this BibTeX:
 
 ```BibTeX
-@ARTICLE{AAAI2026_CCVDbring,
-      title={Bring Your Dreams to Life: Continual Text-to-Video Customization}, 
-      author={Jiahua Dong and Xudong Wang and Wenqi Liang and Zongyan Han and Meng Cao and Duzhen Zhang and Hanbin Zhao and Zhi Han and Salman Khan and Fahad Shahbaz Khan},
-      year={2025},
-      journal={arXiv preprint arXiv:2512.05802}
+@inproceedings{AAAI2026_CCVD_Bring, 
+title={Bring Your Dreams to Life: Continual Text-to-Video Customization}, 
+author={Jiahua Dong and Xudong Wang and Wenqi Liang and Zongyan Han and Meng Cao and Duzhen Zhang and Hanbin Zhao and Zhi Han and Salman Khan and Fahad Shahbaz Khan},
+journal={Proceedings of the AAAI Conference on Artificial Intelligence},
+year={2025}
 }
