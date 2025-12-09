@@ -148,11 +148,13 @@ The inference results can be found in the `/workspace` directory.
 
 ## Acknowledgement
 
-This project is mainly based on DreamVideo. In our experiments, we use the following projects:
+This project is mainly based on DreamVideo and Wan. In our experiments, we use the following projects:
 
 [1] **[DreamVideo: Composing Your Dream Videos with Customized Subject and Motion.](https://github.com/ali-vilab/VGen)**
 
-[2] **[How to Continually Adapt Text-to-Image Diffusion Models for Flexible Customization?](https://github.com/JiahuaDong/CIFC)**
+[2] **[Wan: Open and Advanced Large-Scale Video Generative Models.](https://github.com/Wan-Video/Wan2.1)**
+
+[3] **[How to Continually Adapt Text-to-Image Diffusion Models for Flexible Customization?](https://github.com/JiahuaDong/CIFC)**
 
 
 ## Contact
