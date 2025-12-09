@@ -3,7 +3,7 @@
 ## Bring Your Dreams to Life: Continual Text-to-Video Customization
 ---
 
-Official implementation of **[Bring Your Dreams to Life: Continual Text-to-Video Customization](https://arxiv.org/abs/2410.17594)**.
+Official implementation of **[Bring Your Dreams to Life: Continual Text-to-Video Customization](https://arxiv.org/abs/2512.05802)**.
 
 
 Jiahua Dong, Xudong Wang, Wenqi Liang, Zongyan Han, Meng Cao, Duzhen Zhang, 
