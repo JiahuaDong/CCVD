@@ -1,1 +1,171 @@
-# CCVD
+<div align="center">
+  
+## Bring Your Dreams to Life: Continual Text-to-Video Customization
+
+---
+
+Official implementation of **[Bring Your Dreams to Life: Continual Text-to-Video Customization](https://arxiv.org/abs/2410.17594)**.
+</div>
+
+
+### **Continual Text-to-Video Customization Task**
+
+<div align="center">
+<img src="source/F1.png" width=980>
+</div>
+
+### **Our CCVD Framework**
+
+<div align="center">
+<img src="source/F2.png" width=980>
+</div>
+
+### **Abstract**
+Customized text-to-video generation (CTVG) has recently witnessed significant progress in generating tailored videos from user-specific text. However, existing CTVG methods unrealistically assume that personalized concepts remain static and do not expand incrementally over time. Additionally, they struggle with catastrophic forgetting and concept neglect when continuously learning new concepts, including subjects and motions. To resolve the above challenges, we develop a novel Continual Customized Video Diffusion (CCVD) model, which can continuously learn new concepts to generate videos across various text-to-video generation tasks by tackling catastrophic forgetting and concept neglect. Specifically, to address catastrophic forgetting, we introduce a concept-specific attribute retention module and a task-aware concept aggregation strategy. They can capture the unique characteristics and identities of old concepts during training, while combining all subject and motion adapters of old concepts based on their relevance during testing. Furthermore, to tackle concept neglect, we develop a controllable conditional synthesis to enhance regional features and align video contexts with user conditions, by incorporating layer-specific region attention-guided noise estimation. Experimental comparisons demonstrate that our CCVD outperforms existing CTVG models.
+
+
+## **Examples**
+
+
+## Multi-concept Results
+
+|        | Base: The desert with blue sky in the background. Region: V2 cat and V20 dog walking in the desert   | Base: A river with flowers and plants on its banks. Region: V16 duck toy and V10 dog playing on the river.| Base: A street with buildings. Region: V10 dog and V28 bear toy and V2 cat walking in the street. |
+|--------|-------------------------------------------------------|-------------------------------------------------------|-------------------------------------------------------|
+| Ours   | <video src="https://github.com/user-attachments/assets/70385b77-d51f-4b83-82de-31d4292b6e6a"  width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/fa33c6f0-ece2-4e50-9262-19edba153791"  width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/11351300-c091-4c7c-973e-020b694e629e"  width="30%" controls muted loop></video> |
+| L2DM  | <video src="https://github.com/user-attachments/assets/cddc7f6e-9c18-475d-928b-d676af46b9d7" width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/640ddf08-1b50-4bc3-a13a-521515b811df" width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/b2f73494-9916-4b76-be84-8f39e26c6623" width="30%" controls muted loop></video> |
+| CLoRA | <video src="https://github.com/user-attachments/assets/ae2e8079-b76d-4fa0-9848-6b9c7715c50c" width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/373b3159-0141-4ce6-8a92-dc4da97344e2" width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/7911f2ae-2e0d-49a6-a846-bb94ce24242b" width="30%" controls muted loop></video> |
+| LoRA-M   | <video src="https://github.com/user-attachments/assets/d6e639e0-0115-4bbd-b0e5-3329d6813243"  width="260" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/81dd40eb-e8f8-468f-8692-2958de719efe"  width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/cffe7f5e-8a12-4032-ac04-e58c7d2f936d"  width="260" controls muted loop></video>|
+
+
+## Single-concept Results
+
+|        |V30 man wearing a chef's hat, cutting vegetables in the kitchen. | V1 dog running on the park lawn. | V2 cat wearing sunglasses lying on a beach chair on a sunset beach. |
+|--------|-----------|-----------|-----------|
+| Ours   | <video src="https://github.com/user-attachments/assets/d25bc75f-8f40-4f5a-a8f7-83db3f522b78"  width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/73793b7a-ea5d-4b53-86bf-684171d85148"  width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/705ac4bb-7349-475d-956d-344511c61dd5"  width="30%" controls muted loop></video> |
+| L2DM  | <video src="https://github.com/user-attachments/assets/f372207c-15fc-4138-af88-c5ff023e8ba3" width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/032bf640-42fb-4616-b441-868378fa0721" width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/3386e230-1138-42be-b270-1f197a3fa7c5" width="30%" controls muted loop></video> |
+| CLoRA | <video src="https://github.com/user-attachments/assets/c1e2ebbf-9e63-460a-9ca5-f0bd5a02ad9a" width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/03788ef9-8aac-4a09-bd02-71a989277cd7" width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/c0c0b3e9-cfe5-47cd-8392-f4a0c5589aa9" width="30%" controls muted loop></video> |
+| LoRA-M  | <video src="https://github.com/user-attachments/assets/4286f3c4-6136-4da5-a616-2726ac221e7d"  width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/eaa1836b-29d7-429c-9e28-e760a8841faf"  width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/2295aea3-b794-4c95-bed2-b01b837eca3c"  width="30%" controls muted loop></video> |
+
+
+
+
+## **Dependencies and Installation**
+
+### Ensure torch >= 2.4.0
+pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+
+## CCVD Wan-1.3 Training and Testing
+
+
+### Step 1: Pretrained Model and Data Preparation
+
+### 1.1 Dataset Layout
+
+We assume datasets are mounted under `/data/`:
+
+```bash
+/data/
++-- custom/
+|   +-- infer
+|   |   +-- task_1.txt
+|   |   +-- task_2.txt
+|   |   ...
+|   |   
+|   +-- preview
+|   |   +-- V1.txt
+|   |   +-- V2.txt
+|   |   ...
+|   |   
+|   +-- Train
+|   |   +-- V1.txt
+|   |   +-- V2.txt
+|   |   ...
+|
++-- images/
+|   +-- custom/
+|   |   +-- V1/00.jpg ...
+|   |   +-- V2/00.jpg ...
+|   |   ...
+|
++-- videos/
+|   |   +-- V3/01.avi ...
+|   |   +-- V8/01.avi ...
+|   |   ...
+````
+
+
+### 1.2 Download Wan-1.3 Base Model
+
+We use **Wan2.1-T2V-1.3B** as the base checkpoint. 
+
+Create a `models/` directory in your project root:
+
+```bash
+mkdir -p models
+```
+
+#### Download via `huggingface-cli`
+
+```bash
+pip install "huggingface_hub[cli]"
+
+huggingface-cli download Wan-AI/Wan2.1-T2V-1.3B \
+  --local-dir ./models/Wan2.1-T2V-1.3B
+```
+
+
+### Step 2: Start Training
+
+Once the dataset and base model are ready and the repo dependencies are installed (e.g. `pip install -r requirements.txt`, `torch>=2.4` ([Hugging Face][1])), start fine-tuning:
+
+```bash
+bash train.sh
+```
+
+Typical behavior of `train.sh` (you can adapt to your project):
+
+* Reads a config file (e.g. `configs/wan_1_3.yaml`) that specifies:
+
+  * Path to base model (e.g. `./models/Wan2.1-T2V-1.3B`)
+  * Dataset root (e.g. `/data/custom/Train`)
+  * Training hyperparameters (lr, batch size, max steps, etc.)
+* Saves fine-tuned checkpoints under something like:
+
+  * `./outputs/wan_1_3/checkpoints/`
+
+Please modify `train.sh` and the config file paths to match your own environment and naming.
+
+
+### Step 3: Inference and Evaluation
+
+After training completes, run inference with:
+
+```bash
+bash inference.sh
+```
+The inference results can be found in the `/workspace` directory.
+
+## Acknowledgement
+
+This project is mainly based on DreamVideo. In our experiments, we use the following projects:
+
+[1] **[DreamVideo: Composing Your Dream Videos with Customized Subject and Motion.](https://github.com/ali-vilab/VGen)**
+
+[2] **[How to Continually Adapt Text-to-Image Diffusion Models for Flexible Customization?](https://github.com/JiahuaDong/CIFC)**
+
+
+## Contact
+If you have any questions, you are very welcome to email dongjiahua1995@gmail.com.
+
+
+## BibTeX
+If you find CIDM useful for your research and applications, please cite using this BibTeX:
+
+```BibTeX
+@ARTICLE{AAAI2026_CCVDbring,
+      title={Bring Your Dreams to Life: Continual Text-to-Video Customization}, 
+      author={Jiahua Dong and Xudong Wang and Wenqi Liang and Zongyan Han and Meng Cao and Duzhen Zhang and Hanbin Zhao and Zhi Han and Salman Khan and Fahad Shahbaz Khan},
+      year={2025},
+      journal={arXiv preprint arXiv:2512.05802}
+}
