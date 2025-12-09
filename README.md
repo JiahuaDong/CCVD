@@ -21,6 +21,17 @@ Jiahua Dong, Xudong Wang, Wenqi Liang, Zongyan Han, Meng Cao, Duzhen Zhang, Hanb
 
 The architectural overview of our CCVD model. It includes (a) a concept-specific attribute retention module, (b) a task-aware concept aggregation strategy to overcome catastrophic forgetting of previous concepts during training and testing, and (c) a controllable conditional synthesis module with layer-specific region attention and attention-guided noise estimation to address the issue of concept neglect.
 
+## **Continual Text-to-Video Customization Task**
+
+<div align="center">
+<img src="source/F1.png" width=980>
+</div>
+
+## **Experiment Task Setting**
+
+<div align="center">
+<img src="source/F3.png" width=980>
+</div>
 
 ## **Examples**
 
