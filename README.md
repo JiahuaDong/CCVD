@@ -48,7 +48,7 @@ The architectural overview of our CCVD model. It includes (a) a concept-specific
 
 ### · Wan Baseline
 
-|        | Base: The desert with blue sky in the background. Region: V2 cat and V20 dog walking in the desert   | Base: A river with flowers and plants on its banks. Region: V16 duck toy and V10 dog playing on the river.| Base: A street with buildings. Region: V10 dog and V28 bear toy and V2 cat walking in the street. |
+|        | Base: The desert with blue sky in the background. Region: V31 cat and V12 dog walking in the desert   | Base: A river with flowers and plants on its banks. Region: V22 duck toy and V32 dog playing on the river. | Base: A street with buildings. Region: V22 dog and V6 bear toy and V31 cat walking in the street. |
 |--------|-------------------------------------------------------|-------------------------------------------------------|-------------------------------------------------------|
 | Ours   | <video src="https://github.com/user-attachments/assets/70385b77-d51f-4b83-82de-31d4292b6e6a"  width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/fa33c6f0-ece2-4e50-9262-19edba153791"  width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/11351300-c091-4c7c-973e-020b694e629e"  width="30%" controls muted loop></video> |
 | L2DM  | <video src="https://github.com/user-attachments/assets/cddc7f6e-9c18-475d-928b-d676af46b9d7" width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/640ddf08-1b50-4bc3-a13a-521515b811df" width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/b2f73494-9916-4b76-be84-8f39e26c6623" width="30%" controls muted loop></video> |
@@ -66,7 +66,7 @@ The architectural overview of our CCVD model. It includes (a) a concept-specific
 
 ### · Wan Baseline
 
-|        |V30 man wearing a chef's hat, cutting vegetables in the kitchen. | V1 dog running on the park lawn. | V2 cat wearing sunglasses lying on a beach chair on a sunset beach. |
+|        |V17 man wearing a chef's hat, cutting vegetables in the kitchen. | V1 dog running on the park lawn. | V31 cat wearing sunglasses lying on a beach chair on a sunset beach. |
 |--------|-----------|-----------|-----------|
 | Ours   | <video src="https://github.com/user-attachments/assets/d25bc75f-8f40-4f5a-a8f7-83db3f522b78"  width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/73793b7a-ea5d-4b53-86bf-684171d85148"  width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/705ac4bb-7349-475d-956d-344511c61dd5"  width="30%" controls muted loop></video> |
 | L2DM  | <video src="https://github.com/user-attachments/assets/f372207c-15fc-4138-af88-c5ff023e8ba3" width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/032bf640-42fb-4616-b441-868378fa0721" width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/3386e230-1138-42be-b270-1f197a3fa7c5" width="30%" controls muted loop></video> |
