@@ -1,7 +1,6 @@
 # [AAAI'26] Bring Your Dreams to Life: Continual Text-to-Video Customization
 
-Jiahua Dong, Xudong Wang, Wenqi Liang, Zongyan Han, Meng Cao, Duzhen Zhang, Hanbin Zhao, Zhi Han, Salman Khan, and Fahad Shahbaz Khan, "Bring Your Dreams to Life: Continual Text-to-Video Customization", AAAI, 2026
-
+Jiahua Dong, Xudong Wang, Wenqi Liang, Zongyan Han, Meng Cao, Duzhen Zhang, Hanbin Zhao, Zhi Han, Salman Khan, and Fahad Shahbaz Khan, "Bring Your Dreams to Life: Continual Text-to-Video Customization", AAAI, 2026.
 [[arXiv](https://arxiv.org/abs/2512.05802
 )]
 
@@ -20,7 +19,7 @@ Jiahua Dong, Xudong Wang, Wenqi Liang, Zongyan Han, Meng Cao, Duzhen Zhang, Hanb
 
 ---
 
-Figure 1 in the main paper demonstrates that our proposed ARB-LLM<sub>RC</sub> outperforms the previous state-of-the-art binary PTQ method, BiLLM, across all scales of the OPT model family. Furthermore, our binarized model surpasses full-precision models of similar size. For example, the memory footprint of the binarized OPT-13B is comparable to that of the full-precision OPT-2.7B, yet the binarized model achieves better performance.
+The architectural overview of our CCVD model. It includes (a) a concept-specific attribute retention module, (b) a task-aware concept aggregation strategy to overcome catastrophic forgetting of previous concepts during training and testing, and (c) a controllable conditional synthesis module with layer-specific region attention and attention-guided noise estimation to address the issue of concept neglect.
 
 <p align="center">
   <img width="60%" src="figs/teaser.png">
