@@ -7,13 +7,13 @@ Jiahua Dong, Xudong Wang, Wenqi Liang, Zongyan Han, Meng Cao, Duzhen Zhang, Hanb
 
 #### 🔥🔥🔥 News
 
-- **2025-12-09:** Code is released. ⭐️⭐️⭐️
+- **2025-12-09:** Codes on both <span style="color:red; font-weight:bold">DreamVideo</span> and <span style="color:red; font-weight:bold">Wan 2.1</span> are released. ⭐️⭐️⭐️
 - **2025-12-01:** This repo is released.
 - **2025-11-08:** CCVD is accepted at AAAI 2026. 🎉🎉🎉
 
 ---
 
-> **Abstract:** Customized text-to-video generation (CTVG) has recently witnessed significant progress in generating tailored videos from user-specific text. However, existing CTVG methods unrealistically assume that personalized concepts remain static and do not expand incrementally over time. Additionally, they struggle with catastrophic forgetting and concept neglect when continuously learning new concepts, including subjects and motions. To resolve the above challenges, we develop a novel Continual Customized Video Diffusion (CCVD) model, which can continuously learn new concepts to generate videos across various text-to-video generation tasks by tackling catastrophic forgetting and concept neglect. Specifically, to address catastrophic forgetting, we introduce a concept-specific attribute retention module and a task-aware concept aggregation strategy. They can capture the unique characteristics and identities of old concepts during training, while combining all subject and motion adapters of old concepts based on their relevance during testing. Furthermore, to tackle concept neglect, we develop a controllable conditional synthesis to enhance regional features and align video contexts with user conditions, by incorporating layer-specific region attention-guided noise estimation. Experimental comparisons demonstrate that our CCVD outperforms existing CTVG models.
+> **Abstract:** Customized text-to-video generation (CTVG) has recently witnessed significant progress in generating tailored videos from user-specific text. However, existing CTVG methods unrealistically assume that personalized concepts remain static and do not expand incrementally over time. Additionally, they struggle with catastrophic forgetting and concept neglect when continuously learning new concepts, including subjects and motions. To resolve the above challenges, we develop a novel Continual Customized Video Diffusion (CCVD) model, which can continuously learn new concepts to generate videos across various text-to-video generation tasks by tackling catastrophic forgetting and concept neglect. Specifically, to address catastrophic forgetting, we introduce a concept-specific attribute retention module and a task-aware concept aggregation strategy. They can capture the unique characteristics and identities of old concepts during training, while combining all subject and motion adapters of old concepts based on their relevance during testing. Furthermore, to tackle concept neglect, we develop a controllable conditional synthesis to enhance regional features and align video contexts with user conditions, by incorporating layer-specific region attention-guided noise estimation. Extensive experimental comparisons demonstrate that our CCVD outperforms existing CTVG baselines on both the DreamVideo and Wan 2.1 backbones. 
 
 ![](source/F2.png)
 
@@ -74,9 +74,9 @@ The architectural overview of our CCVD model. It includes (a) a concept-specific
 
 ## Implementation
 
-· If you wish to build upon the DreamVideo baseline model, please refer to **[DreamVideo](https://github.com/JiahuaDong/CCVD/tree/main/DreamVideo)**.
+🔥 If you wish to build upon the DreamVideo baseline model, please refer to **[DreamVideo](https://github.com/JiahuaDong/CCVD/tree/main/DreamVideo)**.
 
-· If you wish to build upon the Wan baseline model, please refer to **[Wan](https://github.com/JiahuaDong/CCVD/tree/main/Wan-1.3)**.
+🔥 If you wish to build upon the Wan baseline model, please refer to **[Wan](https://github.com/JiahuaDong/CCVD/tree/main/Wan-1.3)**.
 
 ## Acknowledgement
 
