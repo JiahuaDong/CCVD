@@ -57,10 +57,13 @@ Customized text-to-video generation (CTVG) has recently witnessed significant pr
 
 ## Style Transfer
 
+<video src="https://github.com/user-attachments/assets/eff75b43-1a47-4a1e-bc83-c991e7e844bf"  width="30%" controls muted loop></video> 
+<video src="https://github.com/user-attachments/assets/eff75b43-1a47-4a1e-bc83-c991e7e844bf]"  width="30%" controls muted loop></video> 
+<video src="https://github.com/user-attachments/assets/eff75b43-1a47-4a1e-bc83-c991e7e844bf"  width="30%" controls muted loop></video> 
 
 ## Video Editing
 
-[![Video](source/cover.gif)](source/V12.mp4)
+<video src="https://github.com/user-attachments/assets/eff75b43-1a47-4a1e-bc83-c991e7e844bf"  width="30%" controls muted loop></video> 
 
 ## Acknowledgement
 
