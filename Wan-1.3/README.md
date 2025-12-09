@@ -1,10 +1,10 @@
 <div align="center">
   
-## Bring Your Dreams to Life: Continual Text-to-Video Customization
-
+## Bring Your Dreams to Life: Continual Text-to-Video Customization (Wan)
 ---
 
-Official implementation of **[Bring Your Dreams to Life: Continual Text-to-Video Customization](https://arxiv.org/abs/2410.17594)**.
+Official implementation of **[Bring Your Dreams to Life: Continual Text-to-Video Customization](https://arxiv.org/abs/2512.05802)**.
+
 </div>
 
 
