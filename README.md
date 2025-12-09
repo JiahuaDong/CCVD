@@ -1,32 +1,30 @@
-<div align="center">
-  
-## Bring Your Dreams to Life: Continual Text-to-Video Customization
+# [AAAI'26] Bring Your Dreams to Life: Continual Text-to-Video Customization
+
+Jiahua Dong, Xudong Wang, Wenqi Liang, Zongyan Han, Meng Cao, Duzhen Zhang, Hanbin Zhao, Zhi Han, Salman Khan, and Fahad Shahbaz Khan, "Bring Your Dreams to Life: Continual Text-to-Video Customization", ICLR, 2025
+
+[[arXiv](https://arxiv.org/abs/2512.05802
+)]
+
+
+#### 🔥🔥🔥 News
+
+- **2025-12-09:** Code is released. ⭐️⭐️⭐️
+- **2024-12-01:** This repo is released.
+- **2025-11-08:** CCVD is accepted at AAAI 2026. 🎉🎉🎉
+
 ---
 
-Official implementation of **[Bring Your Dreams to Life: Continual Text-to-Video Customization](https://arxiv.org/abs/2512.05802)**.
+> **Abstract:** Customized text-to-video generation (CTVG) has recently witnessed significant progress in generating tailored videos from user-specific text. However, existing CTVG methods unrealistically assume that personalized concepts remain static and do not expand incrementally over time. Additionally, they struggle with catastrophic forgetting and concept neglect when continuously learning new concepts, including subjects and motions. To resolve the above challenges, we develop a novel Continual Customized Video Diffusion (CCVD) model, which can continuously learn new concepts to generate videos across various text-to-video generation tasks by tackling catastrophic forgetting and concept neglect. Specifically, to address catastrophic forgetting, we introduce a concept-specific attribute retention module and a task-aware concept aggregation strategy. They can capture the unique characteristics and identities of old concepts during training, while combining all subject and motion adapters of old concepts based on their relevance during testing. Furthermore, to tackle concept neglect, we develop a controllable conditional synthesis to enhance regional features and align video contexts with user conditions, by incorporating layer-specific region attention-guided noise estimation. Experimental comparisons demonstrate that our CCVD outperforms existing CTVG models.
 
+![](source/F2.png)
 
-Jiahua Dong, Xudong Wang, Wenqi Liang, Zongyan Han, Meng Cao, Duzhen Zhang, 
+---
 
-Hanbin Zhao, Zhi Han, Salman Khan, Fahad Shahbaz Khan
+Figure 1 in the main paper demonstrates that our proposed ARB-LLM<sub>RC</sub> outperforms the previous state-of-the-art binary PTQ method, BiLLM, across all scales of the OPT model family. Furthermore, our binarized model surpasses full-precision models of similar size. For example, the memory footprint of the binarized OPT-13B is comparable to that of the full-precision OPT-2.7B, yet the binarized model achieves better performance.
 
-</div>
-
-### **Continual Text-to-Video Customization Task**
-
-<div align="center">
-<img src="source/F1.png" width=980>
-</div>
-
-### **Our CCVD Framework**
-
-<div align="center">
-<img src="source/F2.png" width=980>
-</div>
-
-### **Abstract**
-Customized text-to-video generation (CTVG) has recently witnessed significant progress in generating tailored videos from user-specific text. However, existing CTVG methods unrealistically assume that personalized concepts remain static and do not expand incrementally over time. Additionally, they struggle with catastrophic forgetting and concept neglect when continuously learning new concepts, including subjects and motions. To resolve the above challenges, we develop a novel Continual Customized Video Diffusion (CCVD) model, which can continuously learn new concepts to generate videos across various text-to-video generation tasks by tackling catastrophic forgetting and concept neglect. Specifically, to address catastrophic forgetting, we introduce a concept-specific attribute retention module and a task-aware concept aggregation strategy. They can capture the unique characteristics and identities of old concepts during training, while combining all subject and motion adapters of old concepts based on their relevance during testing. Furthermore, to tackle concept neglect, we develop a controllable conditional synthesis to enhance regional features and align video contexts with user conditions, by incorporating layer-specific region attention-guided noise estimation. Experimental comparisons demonstrate that our CCVD outperforms existing CTVG models.
-
+<p align="center">
+  <img width="60%" src="figs/teaser.png">
+</p>
 
 ## **Examples**
 
