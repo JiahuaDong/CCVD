@@ -105,7 +105,7 @@ If you have any questions, you are very welcome to email dongjiahua1995@gmail.co
 
 
 ## BibTeX
-If you find CIDM useful for your research and applications, please cite using this BibTeX:
+If you find CCVD useful for your research and applications, please cite our paper using this BibTeX:
 
 ```BibTeX
 @inproceedings{AAAI2026_CCVD_Bring, 
