@@ -8,7 +8,7 @@ Jiahua Dong, Xudong Wang, Wenqi Liang, Zongyan Han, Meng Cao, Duzhen Zhang, Hanb
 #### 🔥🔥🔥 News
 
 - **2025-12-09:** Code is released. ⭐️⭐️⭐️
-- **2024-12-01:** This repo is released.
+- **2025-12-01:** This repo is released.
 - **2025-11-08:** CCVD is accepted at AAAI 2026. 🎉🎉🎉
 
 ---
