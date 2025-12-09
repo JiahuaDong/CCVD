@@ -31,6 +31,11 @@ Customized text-to-video generation (CTVG) has recently witnessed significant pr
 
 ### DreamVideo Baseline Performance
 
+<video src="https://github.com/user-attachments/assets/dc00b864-4b41-4f12-8a70-4422fa207952"  width="30%" controls muted loop></video> 
+<video src="https://github.com/user-attachments/assets/bc10b5ab-6809-48bd-a810-4afa34ca1c94"  width="30%" controls muted loop></video> 
+<video src="https://github.com/user-attachments/assets/d3847abc-8c4b-4b05-9ed1-dbff214a489f"  width="30%" controls muted loop></video> 
+<video src="https://github.com/user-attachments/assets/055ed5d3-bb4f-4d00-8cc1-acb32ffef15a"  width="30%" controls muted loop></video> 
+<video src="https://github.com/user-attachments/assets/3c557440-690d-4904-811f-3086bcf02f4a"  width="30%" controls muted loop></video> 
 
 ### Wan Baseline Performance
 
@@ -45,6 +50,10 @@ Customized text-to-video generation (CTVG) has recently witnessed significant pr
 ## Single-concept Results
 
 ### DreamVideo Baseline Performance
+
+<video src="https://github.com/user-attachments/assets/5e22f6a2-d4b7-4ba7-a74c-472ef76bc58f"  width="30%" controls muted loop></video> 
+<video src="https://github.com/user-attachments/assets/0bf65060-7450-4d07-a054-333cfa9339c6"  width="30%" controls muted loop></video> 
+<video src="https://github.com/user-attachments/assets/c613b0be-4e4b-41e5-8f4c-646a0e1e5a24"  width="30%" controls muted loop></video> 
 
 ### Wan Baseline Performance
 
