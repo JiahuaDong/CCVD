@@ -60,9 +60,7 @@ Customized text-to-video generation (CTVG) has recently witnessed significant pr
 
 ## Video Editing
 
-<video src="source/V12.mp4"  width="30%" controls muted loop></video>
-
-<video src="https://github.com/user-attachments/assets/2295aea3-b794-4c95-bed2-b01b837eca3c"  width="30%" controls muted loop></video>
+[![Video](source/cover.gif)](source/V12.mp4)
 
 ## Acknowledgement
 
