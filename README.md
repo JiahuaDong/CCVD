@@ -7,7 +7,7 @@ Jiahua Dong, Xudong Wang, Wenqi Liang, Zongyan Han, Meng Cao, Duzhen Zhang, Hanb
 
 #### 🔥🔥🔥 News
 
-- **2025-12-09:** Codes on both <span style="color:red; font-weight:bold">**DreamVideo**</span> and <span style="color:red; font-weight:bold">**Wan**</span> are released. ⭐️⭐️⭐️
+- **2025-12-09:** Codes on both <span style="color:red; font-weight:bold">**DreamVideo**</span> and <span style="color:red; font-weight:bold">**Wan 2.3**</span> are released. ⭐️⭐️⭐️
 - **2025-12-01:** This repo is released.
 - **2025-11-08:** CCVD is accepted at AAAI 2026. 🎉🎉🎉
 
