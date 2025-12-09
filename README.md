@@ -111,6 +111,6 @@ If you find CIDM useful for your research and applications, please cite using th
 @inproceedings{AAAI2026_CCVD_Bring, 
 title={Bring Your Dreams to Life: Continual Text-to-Video Customization}, 
 author={Jiahua Dong and Xudong Wang and Wenqi Liang and Zongyan Han and Meng Cao and Duzhen Zhang and Hanbin Zhao and Zhi Han and Salman Khan and Fahad Shahbaz Khan},
-journal={Proceedings of the AAAI Conference on Artificial Intelligence},
+booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
 year={2025}
 }
