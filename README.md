@@ -29,6 +29,11 @@ Customized text-to-video generation (CTVG) has recently witnessed significant pr
 
 ## Multi-concept Results
 
+### DreamVideo Baseline Performance
+
+
+### Wan Baseline Performance
+
 |        | Base: The desert with blue sky in the background. Region: V2 cat and V20 dog walking in the desert   | Base: A river with flowers and plants on its banks. Region: V16 duck toy and V10 dog playing on the river.| Base: A street with buildings. Region: V10 dog and V28 bear toy and V2 cat walking in the street. |
 |--------|-------------------------------------------------------|-------------------------------------------------------|-------------------------------------------------------|
 | Ours   | <video src="https://github.com/user-attachments/assets/70385b77-d51f-4b83-82de-31d4292b6e6a"  width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/fa33c6f0-ece2-4e50-9262-19edba153791"  width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/11351300-c091-4c7c-973e-020b694e629e"  width="30%" controls muted loop></video> |
@@ -39,6 +44,10 @@ Customized text-to-video generation (CTVG) has recently witnessed significant pr
 
 ## Single-concept Results
 
+### DreamVideo Baseline Performance
+
+### Wan Baseline Performance
+
 |        |V30 man wearing a chef's hat, cutting vegetables in the kitchen. | V1 dog running on the park lawn. | V2 cat wearing sunglasses lying on a beach chair on a sunset beach. |
 |--------|-----------|-----------|-----------|
 | Ours   | <video src="https://github.com/user-attachments/assets/d25bc75f-8f40-4f5a-a8f7-83db3f522b78"  width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/73793b7a-ea5d-4b53-86bf-684171d85148"  width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/705ac4bb-7349-475d-956d-344511c61dd5"  width="30%" controls muted loop></video> |
@@ -46,113 +55,24 @@ Customized text-to-video generation (CTVG) has recently witnessed significant pr
 | CLoRA | <video src="https://github.com/user-attachments/assets/c1e2ebbf-9e63-460a-9ca5-f0bd5a02ad9a" width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/03788ef9-8aac-4a09-bd02-71a989277cd7" width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/c0c0b3e9-cfe5-47cd-8392-f4a0c5589aa9" width="30%" controls muted loop></video> |
 | LoRA-M  | <video src="https://github.com/user-attachments/assets/4286f3c4-6136-4da5-a616-2726ac221e7d"  width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/eaa1836b-29d7-429c-9e28-e760a8841faf"  width="30%" controls muted loop></video> | <video src="https://github.com/user-attachments/assets/2295aea3-b794-4c95-bed2-b01b837eca3c"  width="30%" controls muted loop></video> |
 
+## Style Transfer
 
 
+## Video Editing
 
-## **Dependencies and Installation**
+<video src="source/V12.mp4"  width="30%" controls muted loop></video>
 
-### Ensure torch >= 2.4.0
-pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
-
-
-## CCVD Wan-1.3 Training and Testing
-
-
-### Step 1: Pretrained Model and Data Preparation
-
-### 1.1 Dataset Layout
-
-We assume datasets are mounted under `/data/`:
-
-```bash
-/data/
-+-- custom/
-|   +-- infer
-|   |   +-- task_1.txt
-|   |   +-- task_2.txt
-|   |   ...
-|   |   
-|   +-- preview
-|   |   +-- V1.txt
-|   |   +-- V2.txt
-|   |   ...
-|   |   
-|   +-- Train
-|   |   +-- V1.txt
-|   |   +-- V2.txt
-|   |   ...
-|
-+-- images/
-|   +-- custom/
-|   |   +-- V1/00.jpg ...
-|   |   +-- V2/00.jpg ...
-|   |   ...
-|
-+-- videos/
-|   |   +-- V3/01.avi ...
-|   |   +-- V8/01.avi ...
-|   |   ...
-````
-
-
-### 1.2 Download Wan-1.3 Base Model
-
-We use **Wan2.1-T2V-1.3B** as the base checkpoint. 
-
-Create a `models/` directory in your project root:
-
-```bash
-mkdir -p models
-```
-
-#### Download via `huggingface-cli`
-
-```bash
-pip install "huggingface_hub[cli]"
-
-huggingface-cli download Wan-AI/Wan2.1-T2V-1.3B \
-  --local-dir ./models/Wan2.1-T2V-1.3B
-```
-
-
-### Step 2: Start Training
-
-Once the dataset and base model are ready and the repo dependencies are installed (e.g. `pip install -r requirements.txt`, `torch>=2.4` ([Hugging Face][1])), start fine-tuning:
-
-```bash
-bash train.sh
-```
-
-Typical behavior of `train.sh` (you can adapt to your project):
-
-* Reads a config file (e.g. `configs/wan_1_3.yaml`) that specifies:
-
-  * Path to base model (e.g. `./models/Wan2.1-T2V-1.3B`)
-  * Dataset root (e.g. `/data/custom/Train`)
-  * Training hyperparameters (lr, batch size, max steps, etc.)
-* Saves fine-tuned checkpoints under something like:
-
-  * `./outputs/wan_1_3/checkpoints/`
-
-Please modify `train.sh` and the config file paths to match your own environment and naming.
-
-
-### Step 3: Inference and Evaluation
-
-After training completes, run inference with:
-
-```bash
-bash inference.sh
-```
-The inference results can be found in the `/workspace` directory.
+<video src="https://github.com/user-attachments/assets/2295aea3-b794-4c95-bed2-b01b837eca3c"  width="30%" controls muted loop></video>
 
 ## Acknowledgement
 
-This project is mainly based on DreamVideo. In our experiments, we use the following projects:
+This project is mainly based on DreamVideo and Wan. In our experiments, we use the following projects:
 
 [1] **[DreamVideo: Composing Your Dream Videos with Customized Subject and Motion.](https://github.com/ali-vilab/VGen)**
 
-[2] **[How to Continually Adapt Text-to-Image Diffusion Models for Flexible Customization?](https://github.com/JiahuaDong/CIFC)**
+[2] **[Wan: Open and Advanced Large-Scale Video Generative Models.](https://github.com/Wan-Video/Wan2.1)**
+
+[3] **[How to Continually Adapt Text-to-Image Diffusion Models for Flexible Customization?](https://github.com/JiahuaDong/CIFC)**
 
 
 ## Contact
