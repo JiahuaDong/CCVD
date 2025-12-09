@@ -84,17 +84,6 @@ bash inference.sh
 ```
 The inference results can be found in the `/workspace` directory.
 
-## Acknowledgement
-
-This project is mainly based on DreamVideo. In our experiments, we use the following projects:
-
-[1] **[DreamVideo: Composing Your Dream Videos with Customized Subject and Motion.](https://github.com/ali-vilab/VGen)**
-
-[2] **[How to Continually Adapt Text-to-Image Diffusion Models for Flexible Customization?](https://github.com/JiahuaDong/CIFC)**
-
-
-## Contact
-If you have any questions, you are very welcome to email wangxudong@sia.cn or dongjiahua1995@gmail.com.
 
 
 ## BibTeX
