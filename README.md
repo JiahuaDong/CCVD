@@ -101,7 +101,7 @@ This project is mainly based on DreamVideo and Wan. In our experiments, we use t
 
 
 ## Contact
-If you have any questions, you are very welcome to email dongjiahua1995@gmail.com.
+If you have any questions, you are very welcome to email dongjiahua1995@gmail.com or wangxudong@sia.cn.
 
 
 ## BibTeX
